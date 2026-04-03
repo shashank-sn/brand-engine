@@ -321,23 +321,19 @@
     /* ── About ── */
     .about-grid {
       display: grid;
-      grid-template-columns: 80px 1fr;
-      gap: 28px;
+      grid-template-columns: 180px 1fr;
+      gap: 36px;
       align-items: start;
       margin-top: 8px;
     }
-    .avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      background: var(--green-light);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 32px;
-      font-weight: 700;
-      color: var(--green);
-      flex-shrink: 0;
+    .about-photo {
+      width: 180px;
+      height: 220px;
+      border-radius: 16px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      outline: 1px solid rgba(0,0,0,0.06);
     }
     .about-creds {
       display: flex;
@@ -687,7 +683,7 @@
       .fit-grid { grid-template-columns: 1fr; }
       .testimonial-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; }
-      .avatar { display: none; }
+      .about-photo { width: 120px; height: 148px; border-radius: 12px; }
       .phase { grid-template-columns: 1fr; }
       .pricing-card { padding: 32px 24px; }
       .price-compare { flex-direction: column; gap: 12px; }
@@ -767,9 +763,10 @@
     <h2>This isn't a sales problem.<br>It's a positioning problem.</h2>
     <p class="lead">Here's the cycle you're stuck in:</p>
 
-    <p><strong>Marketing</strong> does its job. Leads come in. <strong>Sales</strong> doesn't hit the numbers. So sales blames marketing. <strong>Marketing</strong> blames design. <strong>Design</strong> blames the message. <em>And round and round you go.</em></p>
+    <p><strong>Marketing</strong> does its job.<br>Leads come in.<br><strong>Sales</strong> doesn't hit the numbers.<br>So sales blames marketing.<br><strong>Marketing</strong> blames design.<br><strong>Design</strong> blames the message.</p>
+    <p><em>And round and round you go.</em></p>
 
-    <p>Weeks pass. Money bleeds. Revenue flatlines.</p>
+    <p>Weeks pass.<br>Money bleeds.<br>Revenue flatlines.</p>
     <p>Maybe it's not the leads or the creatives. It's just that — <strong>your brand isn't clear.</strong></p>
     <p>I've seen this inside companies big and small, my own brands included. The hard truth? If your brand isn't sharp, your team just spins its wheels.</p>
     <p style="margin-bottom: 2em;">Meanwhile, your competitors with clear strategies are winning deals — and spending less to do it. Brand strategy isn't optional. It's the fix that gets you real results.</p>
@@ -815,7 +812,7 @@
     <p class="section-label">Your Guide</p>
     <h2>About Shashank</h2>
     <div class="about-grid">
-      <div class="avatar">S</div>
+      <img class="about-photo" src="Shasha Hand White.jpg" alt="Shashank" />
       <div>
         <p>I was <strong>Head of Brand at GUVI HCL</strong>, where we landed a <strong>Guinness World Record</strong>. I've built and sold brands — from wedding invites to e-commerce coffee to newsletters.</p>
         <p>My newsletter reaches <strong>20,000+ founders and marketers</strong> every day. I write simply, answer every email, and tell brands exactly what I think — because that's what I'd want if I was stuck.</p>
